@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerServices\LoggerService.csproj", "{083C8183-7B68-4FDC-95E8-E11FC34F16FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{256C1E9C-0293-4B0C-BC6F-4EE3A02194B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{256C1E9C-0293-4B0C-BC6F-4EE3A02194B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{51EBBDB3-7B61-4028-996B-9F9CEA0B7775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{51EBBDB3-7B61-4028-996B-9F9CEA0B7775}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E0E51A4D-E832-4E1D-A6A9-4285851CB96F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93203FBC-1D97-4869-B93D-D7002CD5FF32} = {E0E51A4D-E832-4E1D-A6A9-4285851CB96F}
+		{5DC1BF6A-88EE-4BAB-832A-6BB04E7E5DEF} = {E0E51A4D-E832-4E1D-A6A9-4285851CB96F}
+		{083C8183-7B68-4FDC-95E8-E11FC34F16FA} = {E0E51A4D-E832-4E1D-A6A9-4285851CB96F}
+		{256C1E9C-0293-4B0C-BC6F-4EE3A02194B4} = {E0E51A4D-E832-4E1D-A6A9-4285851CB96F}
+		{51EBBDB3-7B61-4028-996B-9F9CEA0B7775} = {E0E51A4D-E832-4E1D-A6A9-4285851CB96F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFEDF2AA-A1F9-4437-98AC-F487DCAA798B}
