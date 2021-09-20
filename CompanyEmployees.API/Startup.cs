@@ -36,6 +36,8 @@ namespace CompanyEmployees.API
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllers();
            
         }
@@ -65,7 +67,9 @@ namespace CompanyEmployees.API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=WeatherForecast}/{action=Index}/{id?}");
             });
         }
     }
